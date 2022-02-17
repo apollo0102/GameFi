@@ -1,0 +1,15 @@
+footer{
+  .search{
+    &::before {
+      content: url('../../assets/icons/icon-cursorSuffix.svg');
+      margin-right: 10px;
+    }
+    &::after {
+      content: url('../../assets/icons/icon-cursorPrefix.svg');
+      margin-left: 10px;
+    }
+  }
+  .linkItem{
+    background-image: url("../../assets/icons/icon-socialShape.svg");
+  }
+}

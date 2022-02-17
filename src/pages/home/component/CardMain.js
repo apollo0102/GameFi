@@ -36,7 +36,7 @@ const CardMain = () => {
         </ul>
       </div>
       <button className='text-lg font-normal bg-[#6D4AFE] text-white py-5 mb-5'>
-        NEST
+        NEXT
       </button>
       <button className='text-lg font-normal bg-[#C4C4C4]/[.05]  text-white py-5'>
         PREVIOUS
