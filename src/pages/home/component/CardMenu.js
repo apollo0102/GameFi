@@ -1,8 +1,7 @@
 const CardMenu = () => {
   return (
-    // <div className='bg-gradient-to-b from-[#C4C4C4]/[.05]   pl-[50px] pr-[101px] pt-[60px] pb-[284px] w-full'>
-    <div className='bg-gradient-to-b from-[#C4C4C4]/[.05]  w-full'>
-      <ul className='font-normal text-white menu pl-[50px] pr-[101px] pt-[60px] pb-[284px]'>
+    <div className='w-full'>
+      <ul className='bg-gradient-to-b from-[#C4C4C4]/[.05] font-normal text-white menu pl-[50px] pr-[101px] pt-[60px] pb-[320px]'>
         <li className=''>
           <a href='/checkpoint'>Checkpoint</a>
         </li>
