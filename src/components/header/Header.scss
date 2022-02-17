@@ -1,0 +1,11 @@
+.stake{
+  &:hover {
+    color: #a3ff12;
+    font-weight: 700;
+  }
+  &:hover::after {
+    content: url('../../assets/icons/icon-cursorPrefix.svg');
+    margin-left: 10px;
+  }
+
+}

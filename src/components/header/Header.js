@@ -53,13 +53,13 @@ const Header = () => {
       </div>
       <div className='bg-[#C4C4C4]/[.05]'>
         <div className='container flex justify-between items-center py-20 mx-auto'>
-          <div className='text-white'>
+          <div className='text-white w-auto'>
             <ul className=''>
-              <li className='gap-x-5 mb-8'>
-                <a href='/home' className='font-bold'>
-                  HOME .  
+              <li className='gap-x-5 mb-8 '>
+                <a href='/home' className='font-bold m-2'>
+                  HOME  .  
                 </a>
-                <a href='/stake' className='text-[#a7f128] font-bold'>
+                <a href='/stake' className="stake font-bold">
                   STAKE
                 </a>
               </li>
