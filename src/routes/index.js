@@ -5,17 +5,10 @@ import { Mainnet, DAppProvider } from '@usedapp/core';
 const HomePage = lazy(() => import('../pages/home'));
 const ErrorPage = lazy(() => import('../pages/error'));
 
-const config = {
-  readOnlyChainId: Mainnet.chainId,
-  readOnlyUrls: {
-    [Mainnet.chainId]: `https://mainnet.infura.io/v3/${process.env.REACT_APP_INFURA_ID}`,
-  },
-};
-
 const AppRoutes = () => {
   return (
     // <DAppProvider config={config}>
-    <DAppProvider>
+    <DAppProvider>1
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route component={ErrorPage} />
