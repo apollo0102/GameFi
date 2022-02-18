@@ -21,7 +21,7 @@ const About = () => {
         <li className=''>
           <div className='flex justify-center items-center gap-x-8 text-white mb-3'>
             {list.map((item) => (
-              <div className=''>
+              <div className='' key={item}>
                 <a className='' href={item}>
                   {item}
                 </a>

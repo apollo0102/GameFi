@@ -34,6 +34,7 @@ const Home = () => {
               title={item.title}
               value={item.value}
               type={item.type}
+              key = {item.type}
             ></CardStatistic>
           ))}
         </div>
