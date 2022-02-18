@@ -23,7 +23,7 @@ const CardStatistic = (props) => {
             {props.value}
           </li>
           <li className='font-normal text-white mb-5 text-[18px]'>{props.title}</li>
-          <li className=''>{graph()}</li>
+          <li className='scale-x-90 -translate-x-3 sm:scale-100 sm:translate-x-0'>{graph()}</li>
         </ul>
       </div>
   )
