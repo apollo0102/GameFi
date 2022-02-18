@@ -9,7 +9,7 @@ const ErrorPage = lazy(() => import('../pages/error'));
 const AppRoutes = () => {
   return (
     // <DAppProvider config={config}>
-    <DAppProvider>1
+    <DAppProvider>
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route component={ErrorPage} />
