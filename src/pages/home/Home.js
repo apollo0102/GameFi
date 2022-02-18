@@ -27,7 +27,7 @@ const Home = () => {
   // const name = useName();
   return (
     <AppLayout>
-      <main className=' bg-[#090A1A] font-[RussoOne] pb-36'>
+      <main className=' bg-[#090A1A] font-[RussoOne] pb-36  px-2'>
         {/* <div className='container mx-auto  flex flex-wrap gap-y-10 justify-center items-center pt-[70px] gap-x-7  lg:justify-between'> */}
         <div className='container mx-auto flex flex-col justify-center gap-x-7 pt-10 lg:justify-between lg:flex-row'>
           {statisticList.map((item) => (

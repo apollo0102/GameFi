@@ -5,7 +5,7 @@ import Select from 'react-select'
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
-    <div className='bg-[#090A1A] font-[RussoOne]'>
+    <div className='bg-[#090A1A] font-[RussoOne] px-2'>
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       {menuOpen && <MobileMenu>{navLinks}</MobileMenu>}
     </div>
@@ -72,9 +72,9 @@ const Navbar = ({ menuOpen, setMenuOpen }) => (
   <div className='container mx-auto flex flex-col  gap-y-10 items-center justify-between sm:flex-row sm:flex-wrap  py-5  md:gap-y-10'>
     <div className='flex items-center '>
       <IconLogo />
-      <nav className='hidden md:block space-x-10 ml-10'>{navLinks}</nav>
+      <nav className='hidden lg:block space-x-10 ml-10'>{navLinks}</nav>
     </div>
-    <div className='flex  items-center gap-x-6 gap-y-8 justify-center flex-col sm:flex-row sm:justify-between'>
+    <div className='flex  items-center gap-x-6 gap-y-8 justify-center flex-wrap sm:flex-nowrap sm:justify-between'>
       <Select
         className='node-select'
         classNamePrefix='node-select'
@@ -92,26 +92,27 @@ const Navbar = ({ menuOpen, setMenuOpen }) => (
         // onChange={nodeChanged}
         placeholder='BUY TOKEN'
       />
-      <button className='bg-white px-8 py-4 flex justify-center items-center gap-x-3 '>
+      <button className='bg-white px-6 sm:px-15 py-4 flex justify-center items-center gap-x-3 '>
         <IconConnect />
         <span className='text-[#090A1A] font-bold'>CONNECT</span>
       </button>
 
-      <button
+      
+
+    </div>
+    <button
       type='button'
       aria-label='Toggle mobile menu'
       onClick={() => setMenuOpen(!menuOpen)}
-      className='rounded md:hidden focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-50'
+      className='rounded lg:hidden focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-50'
     >
       <MenuAlt4Svg menuOpen={menuOpen} />
     </button>
-
-    </div>
   </div>
 )
 
 const MobileMenu = ({ children }) => (
-  <nav className='p-4 flex flex-col space-y-5 md:hidden text-center font-bold text-3xl'>{children}</nav>
+  <nav className='p-4 flex flex-col space-y-5 lg:hidden text-center font-bold text-3xl'>{children}</nav>
 )
 
 const MenuAlt4Svg = ({ menuOpen }) => (

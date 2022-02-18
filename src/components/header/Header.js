@@ -2,9 +2,9 @@ import './Header.scss'
 import Nav from './Nav'
 const Header = () => {
   return (
-    <header className=' bg-[#090A1A] font-[RussoOne] '>
+    <header className=' bg-[#090A1A] font-[RussoOne]'>
       <Nav/>
-      <div className='bg-[#C4C4C4]/[.05]'>
+      <div className='bg-[#C4C4C4]/[.05]  px-2'>
         <div className='container mx-auto flex flex-col justify-between items-center py-20 gap-y-10  sm:flex-row'>
           <div className='text-white w-auto'>
             <ul className=''>
