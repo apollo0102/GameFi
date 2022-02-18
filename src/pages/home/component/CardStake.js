@@ -1,13 +1,13 @@
 const CardStake = () => {
   return (
-    <div className='w-full justify-start flex flex-col '>
-      <div className='bg-[#C4C4C4]/[.05] pt-[50px] px-[80px] pb-4 border-b-[1px] border-gray-500'>
+    <div className=''>
+      <div className='bg-[#C4C4C4]/[.05] pt-[50px] pl-[55px] pr-[200px] pb-4 border-b-[1px] border-gray-500 w-[310px] sm:w-auto'>
         <ul>
-          <li className='text-[20px] font-bold text-white mb-5'><span className='text-[32px]'>256.50 </span> BUSD</li>
+          <li className='text-[20px] font-bold text-white mb-5 '><span className='text-[32px]'>256.50 </span> BUSD</li>
           <li className='font-normal text-white/[.5] mb-[20px]'>Your Staked</li>
         </ul>
       </div>
-      <div className='bg-[#C4C4C4]/[.05] pt-[50px] px-[80px] pb-4'>
+      <div className='bg-[#C4C4C4]/[.05] pt-[50px] px-[55px] pb-4'>
         <ul>
           <li className='text-[20px] font-bold text-white mb-5'><span className='text-[32px]'>38.00 </span> BUSD</li>
           <li className='font-normal text-white/[.5] mb-[20px]'>Your Rewards</li>

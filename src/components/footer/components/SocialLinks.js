@@ -15,7 +15,7 @@ const SocialLinks = () => {
           <span className='search'>FIND US ON SOCIAL</span>
         </li>
         <li className=''>
-          <div className='flex justify-center items-center gap-x-8'>
+          <div className='flex flex-col gap-y-8 justify-center items-center gap-x-8 sm:flex-row'>
             <div className='linkItem px-[18px] py-[19px]'>
               <IconTwitter></IconTwitter>
             </div>

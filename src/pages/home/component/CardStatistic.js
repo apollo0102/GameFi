@@ -17,8 +17,7 @@ const CardStatistic = (props) => {
   }
 
   return (
-    <div className='w-full'>
-      <div className='bg-[#C4C4C4]/[.05] pt-[50px] px-[50px] pb-4'>
+      <div className='bg-[#C4C4C4]/[.05] pt-6 px-5 pb-4 sm:pt-[50px] sm:px-[70px]'>
         <ul>
           <li className='text-[24px] font-bold text-white mb-5'>
             {props.value}
@@ -27,7 +26,6 @@ const CardStatistic = (props) => {
           <li>{graph()}</li>
         </ul>
       </div>
-    </div>
   )
 }
 export default CardStatistic

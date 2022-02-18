@@ -1,7 +1,6 @@
 const CardMenu = () => {
   return (
-    <div className='w-full'>
-      <ul className='bg-gradient-to-b from-[#C4C4C4]/[.05] font-normal text-white menu pl-[50px] pr-[101px] pt-[60px] pb-[320px]'>
+      <ul className='bg-gradient-to-b from-[#C4C4C4]/[.05] font-normal text-white menu pl-[50px] pr-[146px] sm:pl-[50px] sm:pr-[243px] pt-[60px] pb-[320px]'>
         <li className=''>
           <a href='/checkpoint'>Checkpoint</a>
         </li>
@@ -18,7 +17,6 @@ const CardMenu = () => {
           <a href='/confirmation'>Confirmation</a>
         </li>
       </ul>
-    </div>
   )
 }
 

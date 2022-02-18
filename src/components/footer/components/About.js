@@ -19,7 +19,7 @@ const About = () => {
           </div>
         </li>
         <li className=''>
-          <div className='flex justify-center items-center gap-x-8 text-white mb-3'>
+          <div className='flex flex-col justify-center items-center gap-x-8 gap-y-8 text-white mb-8 sm:flex-row sm:justify-between'>
             {list.map((item) => (
               <div className='' key={item}>
                 <a className='' href={item}>
@@ -30,7 +30,7 @@ const About = () => {
           </div>
         </li>
         <li>
-          <span className='text-white'>
+          <span className='text-white mt-8'>
             Copyright © 2022. All Rights Reserved by GaFi
           </span>
         </li>

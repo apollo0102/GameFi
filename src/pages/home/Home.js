@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <AppLayout>
       <main className=' bg-[#090A1A] font-[RussoOne] pb-36'>
-        <div className='container flex justify-between items-center pt-[70px] mx-auto gap-x-7'>
+        <div className='container mx-auto  flex flex-wrap gap-y-10 justify-center items-center pt-[70px] gap-x-7  lg:justify-between'>
           {statisticList.map((item) => (
             <CardStatistic
               title={item.title}
@@ -38,7 +38,7 @@ const Home = () => {
             ></CardStatistic>
           ))}
         </div>
-        <div className='container flex justify-between pt-10 mx-auto gap-x-7'>
+        <div className='container mx-auto flex flex-wrap justify-center pt-10  gap-x-7 lg:justify-between'>
           <CardMenu></CardMenu>
           <CardMain></CardMain>
           <CardStake></CardStake>
