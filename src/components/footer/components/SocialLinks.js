@@ -12,7 +12,7 @@ const SocialLinks = () => {
     <div className='pt-[50px] px-[80px] pb-4 mb-28 text-center'>
       <ul>
         <li className='text-base font-bold text-white mb-20'>
-          <span className='search'>FIND US ON SOCIAL</span>
+          <span className='search text-sm sm:text-base'>FIND US ON SOCIAL</span>
         </li>
         <li className=''>
           <div className='flex flex-col gap-y-8 justify-center items-center gap-x-8 sm:flex-row'>
