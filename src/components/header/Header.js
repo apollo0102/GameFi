@@ -1,8 +1,4 @@
 import './Header.scss'
-// import Logo from "../../assets/icons/icon-logo.svg"
-import { ReactComponent as IconLogo } from '../../assets/icons/icon-logo.svg'
-import { ReactComponent as IconConnect } from '../../assets/icons/icon-connect.svg'
-import Select from 'react-select'
 import Nav from './Nav'
 const Header = () => {
   return (
@@ -16,7 +12,7 @@ const Header = () => {
                 <a href='/home' className='font-bold m-2'>
                   HOME .
                 </a>
-                <a href='/stake' className='stake font-bold'>
+                <a href='#/stake' className='stake font-bold'>
                   STAKE
                 </a>
               </li>

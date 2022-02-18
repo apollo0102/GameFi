@@ -27,7 +27,6 @@ const customStyles = {
       border: '3px solid #2E2F3C',
       width: 170,
       height: 55,
-      color: 'red',
       fontSize: 30,
     }
   },
@@ -73,15 +72,9 @@ const Navbar = ({ menuOpen, setMenuOpen }) => (
   <div className='container mx-auto flex flex-col  gap-y-10 items-center justify-between sm:flex-row sm:flex-wrap  py-5  md:gap-y-10'>
     <div className='flex items-center '>
       <IconLogo />
-      <nav className='hidden md:block space-x-6 ml-6'>{navLinks}</nav>
+      <nav className='hidden md:block space-x-10 ml-10'>{navLinks}</nav>
     </div>
     <div className='flex  items-center gap-x-6 gap-y-8 justify-center flex-col sm:flex-row sm:justify-between'>
-      {/* <select className='py-4 pl-5 pr-14  border-2  bg-[#090A1A] text-white rounded-none border-stone-600'>
-            <option>BUY TOKEN</option>
-            <option>One</option>
-            <option>One</option>
-            <option>One</option>
-          </select> */}
       <Select
         className='node-select'
         classNamePrefix='node-select'
@@ -101,7 +94,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => (
       />
       <button className='bg-white px-8 py-4 flex justify-center items-center gap-x-3 '>
         <IconConnect />
-        <span className='text-[#090A1A]'>CONNECT</span>
+        <span className='text-[#090A1A] font-bold'>CONNECT</span>
       </button>
 
       <button
@@ -118,7 +111,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => (
 )
 
 const MobileMenu = ({ children }) => (
-  <nav className='p-4 flex flex-col space-y-3 md:hidden'>{children}</nav>
+  <nav className='p-4 flex flex-col space-y-5 md:hidden text-center font-bold text-3xl'>{children}</nav>
 )
 
 const MenuAlt4Svg = ({ menuOpen }) => (
@@ -128,7 +121,7 @@ const MenuAlt4Svg = ({ menuOpen }) => (
       menuOpen ? 'transform rotate-90' : ''
     }`}
     viewBox='0 0 20 20'
-    fill='currentColor'
+    fill='white'
   >
     <path
       fillRule='evenodd'

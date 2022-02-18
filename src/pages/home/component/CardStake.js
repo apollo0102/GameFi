@@ -1,7 +1,7 @@
 const CardStake = () => {
   return (
-    <div className=''>
-      <div className='bg-[#C4C4C4]/[.05] pt-[50px] pl-[55px] pr-[200px] pb-4 border-b-[1px] border-gray-500 w-[310px] sm:w-auto'>
+    <div className='w-full'>
+      <div className='bg-[#C4C4C4]/[.05] pt-[50px] pl-[55px] pb-4 border-b-[1px] border-gray-500'>
         <ul>
           <li className='text-[20px] font-bold text-white mb-5 '><span className='text-[32px]'>256.50 </span> BUSD</li>
           <li className='font-normal text-white/[.5] mb-[20px]'>Your Staked</li>
