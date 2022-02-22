@@ -1,0 +1,25 @@
+main {
+  .container {
+    ul.menu {
+      li {
+        margin-bottom: 20px;
+        a {
+          &:hover {
+            color: #a3ff12;
+            font-weight: 700;
+          }
+          
+        }
+        &:hover {
+          display: flex;
+        }
+        &:hover::after {
+          display: block;
+          content: url('../../assets/icons/icon-cursorPrefix.svg');
+          margin-left: 10px;
+        }
+
+      }
+    }
+  }
+}

@@ -4,6 +4,7 @@ import { ToastContainer } from 'react-toastify';
 // import { Mainnet, DAppProvider } from '@usedapp/core';
 import {DAppProvider } from '@usedapp/core';
 const HomePage = lazy(() => import('../pages/home'));
+const StakePage = lazy(() => import('../pages/stake'));
 const ErrorPage = lazy(() => import('../pages/error'));
 
 const AppRoutes = () => {
@@ -12,6 +13,7 @@ const AppRoutes = () => {
     <DAppProvider>
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='/stake' element={<StakePage />} />
         <Route component={ErrorPage} />
       </Routes>
       <ToastContainer

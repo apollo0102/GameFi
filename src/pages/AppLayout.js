@@ -6,7 +6,7 @@ const AppLayout = (props) => {
     <div className='app-layout'>
       <Header />
       {props.children}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
